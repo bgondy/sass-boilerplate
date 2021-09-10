@@ -1,5 +1,5 @@
 {
-  "name": "@webqamdev/sass-boilerplate",
+  "name": "@bgondy/sass-boilerplate",
   "version": "0.7.1",
   "description": "An opinionated Sass boilerplate",
   "keywords": [
@@ -7,14 +7,15 @@
     "scss",
     "boilerplate"
   ],
-  "homepage": "https://github.com/webqamdev/sass-boilerplate",
+  "homepage": "https://github.com/bgondy/sass-boilerplate",
   "bugs": {
-    "url": "https://github.com/webqamdev/sass-boilerplate/issues"
+    "url": "https://github.com/bgondy/sass-boilerplate/issues"
   },
+  "license": "MIT",
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/webqamdev/sass-boilerplate"
+    "url": "https://github.com/bgondy/sass-boilerplate"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -26,7 +27,7 @@
     "test": "npm run prettier:check && npm run stylelint",
     "prepare": "husky install"
   },
-  "author": "Webqam",
+  "author": "Benjamin Gondy",
   "devDependencies": {
     "autoprefixer": "^10.3.3",
     "breakpoint-sass": "^2.7.1",
