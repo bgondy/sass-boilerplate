@@ -28,14 +28,17 @@ $color-black: black !default;
     @return null;
   }
 
+  $brightness-r: (color.red($color) * 299);
+  $brightness-g: (color.green($color) * 587);
+  $brightness-b: (color.blue($color) * 114);
   $brightness: math.round(
-    (color.red($color) * 299) + (color.green($color) * 587) +
-      (color.blue($color) * 114) * 0.001
+    math.div($brightness-r + $brightness-g + $brightness-b, 1000)
   );
-  $light: math.round(
-    (color.red(white) * 299) + (color.green(white) * 587) +
-      (color.blue(white) * 114) * 0.001
-  );
+
+  $white-r: color.red(white) * 299;
+  $white-g: color.green(white) * 587;
+  $white-b: color.blue(white) * 114;
+  $light: math.round(math.div($white-r + $white-g + $white-b, 1000));
 
   @if math.abs($brightness) < ($light * 0.5) {
     @return $color-light;

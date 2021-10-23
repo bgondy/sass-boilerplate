@@ -1,4 +1,4 @@
-@use 'sass:string';
+@use "sass:string";
 
 @function arrow-shape-polygon($arrow-width, $arrow-height) {
   // Add `1px` to fix rendering issues in several browsers
@@ -8,9 +8,9 @@
     0 0,
     100% 0,
     100% $bottom-offset-y,
-    string.unquote("calc(50% - #{$arrow-width*0.5})") $bottom-offset-y,
+    string.unquote("calc(50% - #{$arrow-width * 0.5})") $bottom-offset-y,
     50% 100%,
-    string.unquote("calc(50% + #{$arrow-width*0.5})") $bottom-offset-y,
+    string.unquote("calc(50% + #{$arrow-width * 0.5})") $bottom-offset-y,
     0 $bottom-offset-y
   );
 }
