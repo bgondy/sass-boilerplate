@@ -7,7 +7,8 @@
   "rules": {
     "prettier/prettier": true,
     "plugin/declaration-block-no-ignored-properties": true,
-    "plugin/stylelint-no-indistinguishable-colors": true
+    "plugin/stylelint-no-indistinguishable-colors": true,
+    "scss/comment-no-empty": false
   },
   "extends": ["stylelint-config-recommended-scss"]
 }
