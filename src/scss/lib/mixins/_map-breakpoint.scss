@@ -1,3 +1,5 @@
+@use 'sass:meta';
+
 /// Loop through a map of breakpoints
 ///
 /// Usage
@@ -40,7 +42,7 @@
 ///   ```
 ///
 @mixin map-breakpoint($breakpoint-map, $default-key: "default") {
-  @if not(mixin-exists(breakpoint)) {
+  @if not(meta.mixin-exists(breakpoint)) {
     @error "Mixin breakpoint() not found. Ensure breakpoint-sass is installed.";
   }
 
